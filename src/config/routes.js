@@ -6,6 +6,6 @@ module.exports = function(server) {
   server.use("/api", router);
 
   //API TODO
-  const todoService = require("../api/todo/todoService");
+  const todoService = require("../api/todo/todoservice");
   todoService.register(router, "/todos"); //serve para registrar todos os metodos cotidos em todos.js
 };
